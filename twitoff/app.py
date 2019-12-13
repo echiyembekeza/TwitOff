@@ -1,11 +1,11 @@
-from flask import Flask, render_template, request
 from decouple import config
+from flask import Flask, render_template, request
 from dotenv import load_dotenv
 from .models import DB, User
 from .predict import predict_user
 from .twitter import add_or_update_user, update_all_users, add_default_users
 
-load_dotenv()
+#load_dotenv()
 
 def create_app():
     """Create and configure an instance of the Flask application"""
